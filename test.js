@@ -1,8 +1,28 @@
+var exec = require('child_process').exec;
 var concat = require('concat-stream')
 var test = require('tape')
 var File = require('vinyl')
 var map = require('./')
 var fs = require('fs')
+
+test('package.json version is great than npm module version', function(t) {
+  exec('npm show vinyl-map version', function(error, stdout, stderr){
+    var packageVersion = require('./package.json').version.split('.');
+    var npmVersion = stdout.split('.');
+
+    if(
+      (parseInt(packageVersion[0]) > parseInt(npmVersion[0])) ||
+      (parseInt(packageVersion[0]) == parseInt(npmVersion[0]) && parseInt(packageVersion[1]) > parseInt(npmVersion[1])) ||
+      (parseInt(packageVersion[0]) == parseInt(npmVersion[0]) && parseInt(packageVersion[1]) == parseInt(npmVersion[1]) && parseInt(packageVersion[2]) > parseInt(npmVersion[2]))
+    ){
+      t.ok(packageVersion, 'package.json version is greater than npm module version');
+    }else{
+      t.fail('package.json version is not greater than npm module version');
+    }
+
+    t.end();
+  });
+})
 
 test('null streams are just passed on', function(t) {
   var file = new File({

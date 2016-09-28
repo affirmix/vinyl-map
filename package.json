@@ -1,7 +1,7 @@
 {
   "name": "vinyl-map",
   "description": "Map vinyl files' contents as strings, so you can easily use existing code without needing yet another gulp plugin!",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "index.js",
   "dependencies": {
     "through2": "^0.4.1",
@@ -19,19 +19,22 @@
     "test": "node test"
   },
   "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "contributors": [
+    "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+    "Andrew Odri <andrew@affirmix.com> (https://affirmix.com/)"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hughsk/vinyl-map"
+    "url": "git://github.com/andrewodri/vinyl-map"
   },
   "bugs": {
-    "url": "https://github.com/hughsk/vinyl-map/issues"
+    "url": "https://github.com/andrewodri/vinyl-map/issues"
   },
-  "homepage": "https://github.com/hughsk/vinyl-map",
+  "homepage": "https://github.com/andrewodri/vinyl-map",
   "keywords": [
     "vinyl",
     "gulp",
-    "gulpfriendly",
     "file",
     "stream",
     "map"

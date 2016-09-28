@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "6.1"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: mPyVetwUE9dBKPrVM+f4o2ms4/QlP/br7lGFiW0jbS2vVfLaILLzxqzir40Gd5NocCzajvt9vm7WSLidKAkf2xiuoa2ZGPWjlTWNfXTMJrA1lYUQVeWWrJyW/HEb8nYz086VT7XqEio2Yz8FbtGLRpzlQzZvuFsBDauEm4UeUA22MP7NHlCtHaFqcUq0hX31LFTQq0uEgcZEzjo9baBDao/d7zGlLtSBUUuHAwIDZ3+jcc9hoqESTMC0GSZfglYxPp5kogi3lBcFQMoWmJZb4UdTZ3V1cjoSt2qecDZ/W/O+rtSlIpvsgxi3MR2lGq9a+7mLLXNcpMV1T36yKOfIJZOhXDFkXM2gxHdYPhozZO0vI9uZAZL6UbR57FDpa6nvsNKM075Q6In70fjaemnzpOuXZPCSIkL3SnKRmVIsh7eSbYz0eypYf6gNOiTRcJKTWXXMN1ufDpdePPyqUBnY3kfJL55cqnAaCdE7tlhLiwNTmynxwOfzOahM5KHj8KbfXA7XTo7WvX08xqI2M7LPQWdl3QtdJSv1YdycveeVtHlqJ1POEDKxf1WqXfL4jfwhgDHtc4cyjWo0rkCGtKkGcmsqMvX/H05ti9oEQ5JEcunNflOhYzB0F+uKncomc0Go2AC69f8P67CAikVpIV44iSavpA5Hy0uE6P99hCepfoA=
+  file: ''
+  on:
+    tags: true

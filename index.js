@@ -29,7 +29,6 @@ function map(fn) {
   }
 
   function map(file, next, contents) {
-    file = file.clone()
     contents = arguments.length < 3
       ? file.contents
       : contents
